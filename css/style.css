@@ -1415,8 +1415,21 @@ iframe {
   padding: 0;
   margin: 0;
 }
+.section3 .tabs-child .tab-content,
+.section3 .tabs-child .nav,
+.mincenter3 .section3 .nav-tabs .nav-item .nav-link {
+  background: #ffffff;
+}
+.mincenter3 .section3 h1 {
+  color: #ffffff;
+}
 .section2 {
   margin-bottom: 30px;
+  padding: 90px 0;
+}
+.section3 {
+  padding: 90px 0;
+  background: var(--color-text15);
 }
 .mincenter .core h2 {
   font-family: var(--font-family-Myriad-Pro-Bold);
