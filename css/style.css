@@ -1241,6 +1241,30 @@ iframe {
   width: 100%;
 }
 /* Min Center */
+/* Mincenter 2 */
+.exam ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.exam ul li img {
+  width: 22px;
+}
+.exam ul li img.main {
+  display: none;
+}
+.exam ul li:hover img.sub {
+  display: none;
+}
+.exam ul li:hover img.main {
+  display: inline-block;
+}
+.exam h3 {
+  text-align: center;
+  width: 100%;
+}
+/* Mincenter 2 */
 /* Other */
 .bg-overlay-black {
   position: fixed;
