@@ -33,7 +33,6 @@
       </div>
       <div class="container">
         <div class="row">
-          
           <nav class="menu-top menu-mobile">
             <span class="close"><i class="far fa-times-circle"></i></span>
             <ul>
@@ -93,10 +92,20 @@
             /></a>
           </li>
           <li>
-            <a href="#"> Tổng quan </a>
+            <a href="#">
+              Tổng quan <img src="../img/home/images/muitenmenu.png" alt=""
+            /></a>
+            <ul class="submenu">
+              <li><a href="#">Sub 1</a></li>
+              <li><a href="#">Sub 1</a></li>
+              <li><a href="#">Sub 1</a></li>
+              <li><a href="#">Sub 1</a></li>
+            </ul>
           </li>
           <li>
-            <a href="#"> Min center </a>
+            <a href="#">
+              Min center <img src="../img/home/images/muitenmenu.png" alt=""
+            /></a>
             <ul class="submenu">
               <li><a href="#">Sub 1</a></li>
               <li><a href="#">Sub 1</a></li>
@@ -124,12 +133,35 @@
           <li>
             <a href="#"> Liên Hệ </a>
           </li>
-          <li>
-            <img
-              class="icon-search"
-              src="../img/home/images/icon-search.png"
-              alt=""
-            />
+          <li class="search-box">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <img
+                class="icon-search"
+                src="../img/home/images/icon-search.png"
+                alt=""
+              />
+            </button>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <input type="text" class="form-control" placeholder="search...">
+                  </div>
+                </div>
+              </div>
+            </div>
           </li>
         </ul>
       </nav>

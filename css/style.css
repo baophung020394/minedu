@@ -1978,6 +1978,14 @@ iframe {
   /* Mincenter 3 */
 }
 @media screen and (min-width: 1200px) {
+  .search-box button {
+    background: none;
+    border: none;
+  }
+  .search-box button:focus,
+  .search-box button:hover {
+    background: none;
+  }
   /* header */
   .header .menu-top ul li a {
     font-size: 18px;
@@ -2006,6 +2014,9 @@ iframe {
   }
   .menu-top.menu-desk ul li {
     position: relative;
+  }
+  .menu-top.menu-desk ul li a img {
+    width: 20px;
   }
   .menu-top.menu-desk ul li:hover .submenu {
     opacity: 1;
@@ -2253,6 +2264,9 @@ iframe {
   }
   .menu-top.menu-desk .menu-left li {
     margin-right: 45px;
+  }
+  .menu-top.menu-desk .menu-right li {
+    margin-left: 45px;
   }
   /* Chuong Trinh */
   .item-trainee .content-right {
