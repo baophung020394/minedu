@@ -212,60 +212,60 @@ function openday(evt, days) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 
-function openmonhoc(evt, cap) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cap).style.display = "block";
-  evt.currentTarget.className += " active";
-}
+// function openmonhoc(evt, cap) {
+//   var i, tabcontent, tablinks;
+//   tabcontent = document.getElementsByClassName("tabcontent");
+//   for (i = 0; i < tabcontent.length; i++) {
+//     tabcontent[i].style.display = "none";
+//   }
+//   tablinks = document.getElementsByClassName("tablinks");
+//   for (i = 0; i < tablinks.length; i++) {
+//     tablinks[i].className = tablinks[i].className.replace(" active", "");
+//   }
+//   document.getElementById(cap).style.display = "block";
+//   evt.currentTarget.className += " active";
+// }
 
 
-function openmonhocdoc(evt, lop) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent2");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks2");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(lop).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-document.getElementById("defaultOpen2").click();
+// function openmonhocdoc(evt, lop) {
+//   var i, tabcontent, tablinks;
+//   tabcontent = document.getElementsByClassName("tabcontent2");
+//   for (i = 0; i < tabcontent.length; i++) {
+//     tabcontent[i].style.display = "none";
+//   }
+//   tablinks = document.getElementsByClassName("tablinks2");
+//   for (i = 0; i < tablinks.length; i++) {
+//     tablinks[i].className = tablinks[i].className.replace(" active", "");
+//   }
+//   document.getElementById(lop).style.display = "block";
+//   evt.currentTarget.className += " active";
+// }
+// document.getElementById("defaultOpen2").click();
 
-function openmonhoc2(evt, cap) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent3");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks3");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cap).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-function openmonhocdoc2(evt, lop) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent4");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks4");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(lop).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-document.getElementById("defaultOpen3").click();
+// function openmonhoc2(evt, cap) {
+//   var i, tabcontent, tablinks;
+//   tabcontent = document.getElementsByClassName("tabcontent3");
+//   for (i = 0; i < tabcontent.length; i++) {
+//     tabcontent[i].style.display = "none";
+//   }
+//   tablinks = document.getElementsByClassName("tablinks3");
+//   for (i = 0; i < tablinks.length; i++) {
+//     tablinks[i].className = tablinks[i].className.replace(" active", "");
+//   }
+//   document.getElementById(cap).style.display = "block";
+//   evt.currentTarget.className += " active";
+// }
+// function openmonhocdoc2(evt, lop) {
+//   var i, tabcontent, tablinks;
+//   tabcontent = document.getElementsByClassName("tabcontent4");
+//   for (i = 0; i < tabcontent.length; i++) {
+//     tabcontent[i].style.display = "none";
+//   }
+//   tablinks = document.getElementsByClassName("tablinks4");
+//   for (i = 0; i < tablinks.length; i++) {
+//     tablinks[i].className = tablinks[i].className.replace(" active", "");
+//   }
+//   document.getElementById(lop).style.display = "block";
+//   evt.currentTarget.className += " active";
+// }
+// document.getElementById("defaultOpen3").click();

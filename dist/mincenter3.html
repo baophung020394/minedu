@@ -178,363 +178,691 @@
             sinh rèn luyện tính tự giác và duy trì thói quen học tập chủ động
             tại mọi nơi.
           </p>
-          <div class="tabs">
-            <div class="tab">
-              <button
-                type="button"
-                class="tablinks"
-                onclick="openmonhoc(event, 'monday')"
-                id="defaultOpen"
+          <div class="classes">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="tieuhoc-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#tieuhoc"
+                  type="button"
+                  role="tab"
+                  aria-controls="tieuhoc"
+                  aria-selected="true"
+                >
+                  Tiểu học
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="thcs-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#thcs"
+                  type="button"
+                  role="tab"
+                  aria-controls="thcs"
+                  aria-selected="false"
+                >
+                  Trung học cơ sở
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="thpt-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#thpt"
+                  type="button"
+                  role="tab"
+                  aria-controls="thpt"
+                  aria-selected="false"
+                >
+                  Trung học phổ thông
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="tieuhoc"
+                role="tabpanel"
+                aria-labelledby="tieuhoc-tab"
               >
-                Tiểu học
-              </button>
-              <button
-                type="button"
-                class="tablinks"
-                onclick="openmonhoc(event, 'tus')"
-              >
-                Trung học cơ sở
-              </button>
-              <button
-                type="button"
-                class="tablinks"
-                onclick="openmonhoc(event, 'wed')"
-              >
-                Trung học phổ thông
-              </button>
-            </div>
-            <div id="monday" class="tabcontent">
-              <div class="class">
-                <div class="tab2">
-                  <button
-                    class="tablinks2 active"
-                    onclick="openmonhocdoc(event, 'lop6')"
-                    id="defaultOpen2"
+                <div class="tabs-child d-flex align-items-start">
+                  <div
+                    class="nav flex-column nav-pills me-3"
+                    id="v-pills-tab"
+                    role="tablist"
+                    aria-orientation="vertical"
                   >
-                    Lớp 6
-                  </button>
-                  <button
-                    class="tablinks2"
-                    onclick="openmonhocdoc(event, 'lop7')"
-                  >
-                    Lớp 7
-                  </button>
-                  <button
-                    class="tablinks2"
-                    onclick="openmonhocdoc(event, 'lop8')"
-                  >
-                    Lớp 8
-                  </button>
-                </div>
-
-                <div id="lop6" class="tabcontent2">
-                  <div class="bg-child">
-                    <label class="label-checkmark">
-                      <input type="checkbox" checked="checked" />
-                      <span class="checkmark"></span>
-                    </label>
-                    <label class="label-checkmark">
-                      <input type="checkbox" />
-                      <span class="checkmark"></span>
-                    </label>
-                    <label class="label-checkmark">
-                      <input type="checkbox" />
-                      <span class="checkmark"></span>
-                    </label>
-                    <label class="label-checkmark">
-                      <input type="checkbox" />
-                      <span class="checkmark"></span>
-                    </label>
-                    <label class="label-checkmark">
-                      <input type="checkbox" />
-                      <span class="checkmark"></span>
-                    </label>
-                    <label class="label-checkmark">
-                      <input type="checkbox" />
-                      <span class="checkmark"></span>
-                    </label>
+                    <button
+                      class="nav-link active"
+                      id="v-pills-home-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-home"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-home"
+                      aria-selected="true"
+                    >
+                      Lớp 6
+                    </button>
+                    <button
+                      class="nav-link"
+                      id="v-pills-profile-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-profile"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-profile"
+                      aria-selected="false"
+                    >
+                      Lớp 7
+                    </button>
+                    <button
+                      class="nav-link"
+                      id="v-pills-messages-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-messages"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-messages"
+                      aria-selected="false"
+                    >
+                      Lớp 8
+                    </button>
+                    <button
+                      class="nav-link"
+                      id="v-pills-settings-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-settings"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-settings"
+                      aria-selected="false"
+                    >
+                      Lớp 9
+                    </button>
                   </div>
-                </div>
-
-                <div id="lop7" class="tabcontent2">
-                  <div class="bg-child">
+                  <div class="tab-content" id="v-pills-tabContent">
+                    <div
+                      class="tab-pane fade show active"
+                      id="v-pills-home"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-home-tab"
+                    >
                     <label class="label-checkmark">
+                      
                       <input type="checkbox" checked="checked" />
                       <span class="checkmark"></span>
                     </label>
                     <label class="label-checkmark">
+                      
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="label-checkmark"
+                      >
                       <input type="checkbox" />
                       <span class="checkmark"></span>
                     </label>
                     <label class="label-checkmark">
+                      
                       <input type="checkbox" />
                       <span class="checkmark"></span>
                     </label>
                     <label class="label-checkmark">
+                      
                       <input type="checkbox" />
                       <span class="checkmark"></span>
                     </label>
                     <label class="label-checkmark">
+                      
                       <input type="checkbox" />
                       <span class="checkmark"></span>
                     </label>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="v-pills-profile"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-profile-tab"
+                    >
                     <label class="label-checkmark">
-                      <input type="checkbox" />
-                      <span class="checkmark"></span>
-                    </label>
-                  </div>
-                </div>
-
-                <div id="lop8" class="tabcontent2">
-                  <div class="bg-child">
-                    <label class="label-checkmark">
+                      
                       <input type="checkbox" checked="checked" />
                       <span class="checkmark"></span>
                     </label>
                     <label class="label-checkmark">
+                      
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="label-checkmark"
+                      >
                       <input type="checkbox" />
                       <span class="checkmark"></span>
                     </label>
                     <label class="label-checkmark">
+                      
                       <input type="checkbox" />
                       <span class="checkmark"></span>
                     </label>
                     <label class="label-checkmark">
+                      
                       <input type="checkbox" />
                       <span class="checkmark"></span>
                     </label>
                     <label class="label-checkmark">
+                      
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="v-pills-messages"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-messages-tab"
+                    >
+                    <label class="label-checkmark">
+                      
+                      <input type="checkbox" checked="checked" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="label-checkmark">
+                      
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="label-checkmark"
+                      >
                       <input type="checkbox" />
                       <span class="checkmark"></span>
                     </label>
                     <label class="label-checkmark">
+                      
                       <input type="checkbox" />
                       <span class="checkmark"></span>
                     </label>
+                    <label class="label-checkmark">
+                      
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="label-checkmark">
+                      
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="v-pills-settings"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-settings-tab"
+                    >
+                    <label class="label-checkmark">
+                      
+                      <input type="checkbox" checked="checked" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="label-checkmark">
+                      
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="label-checkmark"
+                      >
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="label-checkmark">
+                      
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="label-checkmark">
+                      
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="label-checkmark">
+                      
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div id="tus" class="tabcontent">
-              <div class="class">
-                <div class="tab2">
-                  <button
-                    class="tablinks2 active"
-                    onclick="openmonhocdoc(event, 'lop62')"
-                    id="defaultOpen2"
+              <div
+                class="tab-pane fade"
+                id="thcs"
+                role="tabpanel"
+                aria-labelledby="thcs-tab"
+              >
+                <div class="tabs-child d-flex align-items-start">
+                  <div
+                    class="nav flex-column nav-pills me-3"
+                    id="v-pills-tab"
+                    role="tablist"
+                    aria-orientation="vertical"
                   >
-                    Lớp 6
-                  </button>
-                  <button
-                    class="tablinks2"
-                    onclick="openmonhocdoc(event, 'lop72')"
-                  >
-                    Lớp 7
-                  </button>
-                  <button
-                    class="tablinks2"
-                    onclick="openmonhocdoc(event, 'lop82')"
-                  >
-                    Lớp 8
-                  </button>
-                </div>
-
-                <div id="lop62" class="tabcontent2">
-                  <div class="bg-child">
-                    <label class="label-checkmark">
-                      <input type="checkbox" checked="checked" />
-                      <span class="checkmark"></span>
-                    </label>
-                    <label class="label-checkmark">
-                      <input type="checkbox" />
-                      <span class="checkmark"></span>
-                    </label>
-                    <label class="label-checkmark">
-                      <input type="checkbox" />
-                      <span class="checkmark"></span>
-                    </label>
-                    <label class="label-checkmark">
-                      <input type="checkbox" />
-                      <span class="checkmark"></span>
-                    </label>
-                    <label class="label-checkmark">
-                      <input type="checkbox" />
-                      <span class="checkmark"></span>
-                    </label>
-                    <label class="label-checkmark">
-                      <input type="checkbox" />
-                      <span class="checkmark"></span>
-                    </label>
+                    <button
+                      class="nav-link active"
+                      id="v-pills-home2-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-home2"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-home2"
+                      aria-selected="true"
+                    >
+                      Lớp 6
+                    </button>
+                    <button
+                      class="nav-link"
+                      id="v-pills-profile2-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-profile2"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-profile2"
+                      aria-selected="false"
+                    >
+                      Lớp 7
+                    </button>
+                    <button
+                      class="nav-link"
+                      id="v-pills-messages2-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-messages2"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-messages2"
+                      aria-selected="false"
+                    >
+                      Lớp 8
+                    </button>
+                    <button
+                      class="nav-link"
+                      id="v-pills-settings2-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-settings2"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-settings2"
+                      aria-selected="false"
+                    >
+                      Lớp 9
+                    </button>
                   </div>
-                </div>
-
-                <div id="lop72" class="tabcontent2">
-                  <div class="bg-child">
+                  <div class="tab-content" id="v-pills-tabContent">
+                    <div
+                      class="tab-pane fade show active"
+                      id="v-pills-home2"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-home2-tab"
+                    >
                     <label class="label-checkmark">
+                      
                       <input type="checkbox" checked="checked" />
                       <span class="checkmark"></span>
                     </label>
                     <label class="label-checkmark">
+                      
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="label-checkmark"
+                      >
                       <input type="checkbox" />
                       <span class="checkmark"></span>
                     </label>
                     <label class="label-checkmark">
+                      
                       <input type="checkbox" />
                       <span class="checkmark"></span>
                     </label>
                     <label class="label-checkmark">
+                      
                       <input type="checkbox" />
                       <span class="checkmark"></span>
                     </label>
                     <label class="label-checkmark">
+                      
                       <input type="checkbox" />
                       <span class="checkmark"></span>
                     </label>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="v-pills-profile2"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-profile2-tab"
+                    >
                     <label class="label-checkmark">
-                      <input type="checkbox" />
-                      <span class="checkmark"></span>
-                    </label>
-                  </div>
-                </div>
-
-                <div id="lop82" class="tabcontent2">
-                  <div class="bg-child">
-                    <label class="label-checkmark">
+                      
                       <input type="checkbox" checked="checked" />
                       <span class="checkmark"></span>
                     </label>
                     <label class="label-checkmark">
+                      
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="label-checkmark"
+                      >
                       <input type="checkbox" />
                       <span class="checkmark"></span>
                     </label>
                     <label class="label-checkmark">
+                      
                       <input type="checkbox" />
                       <span class="checkmark"></span>
                     </label>
                     <label class="label-checkmark">
+                      
                       <input type="checkbox" />
                       <span class="checkmark"></span>
                     </label>
                     <label class="label-checkmark">
+                      
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="v-pills-messages2"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-messages2-tab"
+                    >
+                    <label class="label-checkmark">
+                      
+                      <input type="checkbox" checked="checked" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="label-checkmark">
+                      
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="label-checkmark"
+                      >
                       <input type="checkbox" />
                       <span class="checkmark"></span>
                     </label>
                     <label class="label-checkmark">
+                      
                       <input type="checkbox" />
                       <span class="checkmark"></span>
                     </label>
+                    <label class="label-checkmark">
+                      
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="label-checkmark">
+                      
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="v-pills-settings2"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-settings2-tab"
+                    >
+                    <label class="label-checkmark">
+                      
+                      <input type="checkbox" checked="checked" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="label-checkmark">
+                      
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="label-checkmark"
+                      >
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="label-checkmark">
+                      
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="label-checkmark">
+                      
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="label-checkmark">
+                      
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div id="wed" class="tabcontent">
-              <div class="class">
-                <div class="tab2">
-                  <button
-                    class="tablinks2 active"
-                    onclick="openmonhocdoc(event, 'lop63')"
-                    id="defaultOpen2"
+              <div
+                class="tab-pane fade"
+                id="thpt"
+                role="tabpanel"
+                aria-labelledby="thpt-tab"
+              >
+                <div class="tabs-child d-flex align-items-start">
+                  <div
+                    class="nav flex-column nav-pills me-3"
+                    id="v-pills-tab"
+                    role="tablist"
+                    aria-orientation="vertical"
                   >
+                    <button
+                      class="nav-link active"
+                      id="v-pills-home3-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-home3"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-home3"
+                      aria-selected="true"
+                    >
                     Lớp 6
-                  </button>
-                  <button
-                    class="tablinks2"
-                    onclick="openmonhocdoc(event, 'lop73')"
-                  >
+                    </button>
+                    <button
+                      class="nav-link"
+                      id="v-pills-profile3-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-profile3"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-profile3"
+                      aria-selected="false"
+                    >
                     Lớp 7
-                  </button>
-                  <button
-                    class="tablinks2"
-                    onclick="openmonhocdoc(event, 'lop83')"
-                  >
+                    </button>
+                    <button
+                      class="nav-link"
+                      id="v-pills-messages3-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-messages3"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-messages3"
+                      aria-selected="false"
+                    >
                     Lớp 8
-                  </button>
-                </div>
-
-                <div id="lop63" class="tabcontent2">
-                  <div class="bg-child">
-                    <label class="label-checkmark">
-                      <input type="checkbox" checked="checked" />
-                      <span class="checkmark"></span>
-                    </label>
-                    <label class="label-checkmark">
-                      <input type="checkbox" />
-                      <span class="checkmark"></span>
-                    </label>
-                    <label class="label-checkmark">
-                      <input type="checkbox" />
-                      <span class="checkmark"></span>
-                    </label>
-                    <label class="label-checkmark">
-                      <input type="checkbox" />
-                      <span class="checkmark"></span>
-                    </label>
-                    <label class="label-checkmark">
-                      <input type="checkbox" />
-                      <span class="checkmark"></span>
-                    </label>
-                    <label class="label-checkmark">
-                      <input type="checkbox" />
-                      <span class="checkmark"></span>
-                    </label>
+                    </button>
+                    <button
+                      class="nav-link"
+                      id="v-pills-settings3-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-settings3"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-settings3"
+                      aria-selected="false"
+                    >
+                      Lớp 9
+                    </button>
                   </div>
-                </div>
-
-                <div id="lop73" class="tabcontent2">
-                  <div class="bg-child">
+                  <div class="tab-content" id="v-pills-tabContent">
+                    <div
+                      class="tab-pane fade show active"
+                      id="v-pills-home3"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-home3-tab"
+                    >
                     <label class="label-checkmark">
+                      
                       <input type="checkbox" checked="checked" />
                       <span class="checkmark"></span>
                     </label>
                     <label class="label-checkmark">
+                      
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="label-checkmark"
+                      >
                       <input type="checkbox" />
                       <span class="checkmark"></span>
                     </label>
                     <label class="label-checkmark">
+                      
                       <input type="checkbox" />
                       <span class="checkmark"></span>
                     </label>
                     <label class="label-checkmark">
+                      
                       <input type="checkbox" />
                       <span class="checkmark"></span>
                     </label>
                     <label class="label-checkmark">
+                      
                       <input type="checkbox" />
                       <span class="checkmark"></span>
                     </label>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="v-pills-profile3"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-profile3-tab"
+                    >
                     <label class="label-checkmark">
-                      <input type="checkbox" />
-                      <span class="checkmark"></span>
-                    </label>
-                  </div>
-                </div>
-
-                <div id="lop83" class="tabcontent2">
-                  <div class="bg-child">
-                    <label class="label-checkmark">
+                      
                       <input type="checkbox" checked="checked" />
                       <span class="checkmark"></span>
                     </label>
                     <label class="label-checkmark">
+                      
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="label-checkmark"
+                      >
                       <input type="checkbox" />
                       <span class="checkmark"></span>
                     </label>
                     <label class="label-checkmark">
+                      
                       <input type="checkbox" />
                       <span class="checkmark"></span>
                     </label>
                     <label class="label-checkmark">
+                      
                       <input type="checkbox" />
                       <span class="checkmark"></span>
                     </label>
                     <label class="label-checkmark">
+                      
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="v-pills-messages3"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-messages3-tab"
+                    >
+                    <label class="label-checkmark">
+                      
+                      <input type="checkbox" checked="checked" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="label-checkmark">
+                      
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="label-checkmark"
+                      >
                       <input type="checkbox" />
                       <span class="checkmark"></span>
                     </label>
                     <label class="label-checkmark">
+                      
                       <input type="checkbox" />
                       <span class="checkmark"></span>
                     </label>
+                    <label class="label-checkmark">
+                      
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="label-checkmark">
+                      
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="v-pills-settings3"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-settings3-tab"
+                    >
+                    <label class="label-checkmark">
+                      
+                      <input type="checkbox" checked="checked" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="label-checkmark">
+                      
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="label-checkmark"
+                      >
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="label-checkmark">
+                      
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="label-checkmark">
+                      
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="label-checkmark">
+                      
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -542,8 +870,699 @@
           </div>
         </div>
       </div>
-     
-
+      <div class="section3">
+        <h1>asdasdsad</h1>
+        <div class="classes">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="tieuhoc-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#tieuhoc"
+                type="button"
+                role="tab"
+                aria-controls="tieuhoc"
+                aria-selected="true"
+              >
+                Tiểu học
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="thcs-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#thcs"
+                type="button"
+                role="tab"
+                aria-controls="thcs"
+                aria-selected="false"
+              >
+                Trung học cơ sở
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="thpt-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#thpt"
+                type="button"
+                role="tab"
+                aria-controls="thpt"
+                aria-selected="false"
+              >
+                Trung học phổ thông
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div
+              class="tab-pane fade show active"
+              id="tieuhoc"
+              role="tabpanel"
+              aria-labelledby="tieuhoc-tab"
+            >
+              <div class="tabs-child d-flex align-items-start">
+                <div
+                  class="nav flex-column nav-pills me-3"
+                  id="v-pills-tab"
+                  role="tablist"
+                  aria-orientation="vertical"
+                >
+                  <button
+                    class="nav-link active"
+                    id="v-pills-home-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-home"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills-home"
+                    aria-selected="true"
+                  >
+                    Lớp 6
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="v-pills-profile-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-profile"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills-profile"
+                    aria-selected="false"
+                  >
+                    Lớp 7
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="v-pills-messages-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-messages"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills-messages"
+                    aria-selected="false"
+                  >
+                    Lớp 8
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="v-pills-settings-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-settings"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills-settings"
+                    aria-selected="false"
+                  >
+                    Lớp 9
+                  </button>
+                </div>
+                <div class="tab-content" id="v-pills-tabContent">
+                  <div
+                    class="tab-pane fade show active"
+                    id="v-pills-home"
+                    role="tabpanel"
+                    aria-labelledby="v-pills-home-tab"
+                  >
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" checked="checked" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark"
+                    >
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="v-pills-profile"
+                    role="tabpanel"
+                    aria-labelledby="v-pills-profile-tab"
+                  >
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" checked="checked" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark"
+                    >
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="v-pills-messages"
+                    role="tabpanel"
+                    aria-labelledby="v-pills-messages-tab"
+                  >
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" checked="checked" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark"
+                    >
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="v-pills-settings"
+                    role="tabpanel"
+                    aria-labelledby="v-pills-settings-tab"
+                  >
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" checked="checked" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark"
+                    >
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="thcs"
+              role="tabpanel"
+              aria-labelledby="thcs-tab"
+            >
+              <div class="tabs-child d-flex align-items-start">
+                <div
+                  class="nav flex-column nav-pills me-3"
+                  id="v-pills-tab"
+                  role="tablist"
+                  aria-orientation="vertical"
+                >
+                  <button
+                    class="nav-link active"
+                    id="v-pills-home2-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-home2"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills-home2"
+                    aria-selected="true"
+                  >
+                    Lớp 6
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="v-pills-profile2-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-profile2"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills-profile2"
+                    aria-selected="false"
+                  >
+                    Lớp 7
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="v-pills-messages2-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-messages2"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills-messages2"
+                    aria-selected="false"
+                  >
+                    Lớp 8
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="v-pills-settings2-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-settings2"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills-settings2"
+                    aria-selected="false"
+                  >
+                    Lớp 9
+                  </button>
+                </div>
+                <div class="tab-content" id="v-pills-tabContent">
+                  <div
+                    class="tab-pane fade show active"
+                    id="v-pills-home2"
+                    role="tabpanel"
+                    aria-labelledby="v-pills-home2-tab"
+                  >
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" checked="checked" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark"
+                    >
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="v-pills-profile2"
+                    role="tabpanel"
+                    aria-labelledby="v-pills-profile2-tab"
+                  >
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" checked="checked" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark"
+                    >
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="v-pills-messages2"
+                    role="tabpanel"
+                    aria-labelledby="v-pills-messages2-tab"
+                  >
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" checked="checked" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark"
+                    >
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="v-pills-settings2"
+                    role="tabpanel"
+                    aria-labelledby="v-pills-settings2-tab"
+                  >
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" checked="checked" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark"
+                    >
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="thpt"
+              role="tabpanel"
+              aria-labelledby="thpt-tab"
+            >
+              <div class="tabs-child d-flex align-items-start">
+                <div
+                  class="nav flex-column nav-pills me-3"
+                  id="v-pills-tab"
+                  role="tablist"
+                  aria-orientation="vertical"
+                >
+                  <button
+                    class="nav-link active"
+                    id="v-pills-home3-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-home3"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills-home3"
+                    aria-selected="true"
+                  >
+                  Lớp 6
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="v-pills-profile3-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-profile3"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills-profile3"
+                    aria-selected="false"
+                  >
+                  Lớp 7
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="v-pills-messages3-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-messages3"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills-messages3"
+                    aria-selected="false"
+                  >
+                  Lớp 8
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="v-pills-settings3-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-settings3"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills-settings3"
+                    aria-selected="false"
+                  >
+                    Lớp 9
+                  </button>
+                </div>
+                <div class="tab-content" id="v-pills-tabContent">
+                  <div
+                    class="tab-pane fade show active"
+                    id="v-pills-home3"
+                    role="tabpanel"
+                    aria-labelledby="v-pills-home3-tab"
+                  >
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" checked="checked" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark"
+                    >
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="v-pills-profile3"
+                    role="tabpanel"
+                    aria-labelledby="v-pills-profile3-tab"
+                  >
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" checked="checked" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark"
+                    >
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="v-pills-messages3"
+                    role="tabpanel"
+                    aria-labelledby="v-pills-messages3-tab"
+                  >
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" checked="checked" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark"
+                    >
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="v-pills-settings3"
+                    role="tabpanel"
+                    aria-labelledby="v-pills-settings3-tab"
+                  >
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" checked="checked" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark"
+                    >
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="label-checkmark">
+                    
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <footer
       class="footer"
