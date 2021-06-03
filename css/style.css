@@ -1997,10 +1997,11 @@ iframe {
     top: 100px;
     left: 0;
     z-index: 10;
-    width: 100%;
+    min-width: 300px;
     transition: 0.4s all ease-in-out;
+    background-color: rgb(0 0 0 / 30%)
   }
-  .submenu::before {
+  /* .submenu::before {
     content: '';
     background-color: rgb(0 0 0 / 30%);
     width: 100vw;
@@ -2011,7 +2012,7 @@ iframe {
     left: 0;
     z-index: 0;
     transform: translateX(-23%);
-  }
+  } */
   .menu-top.menu-desk ul li {
     position: relative;
   }
@@ -2029,6 +2030,8 @@ iframe {
   }
   .menu-top.menu-desk ul li .submenu li a {
     color: #ffffff;
+    width: 100%;
+    padding: 0 15px;
   }
   .menu-top.menu-desk ul li .submenu li:hover a {
     color: var(--color-text15);
@@ -2263,10 +2266,10 @@ iframe {
     max-width: 1380px;
   }
   .menu-top.menu-desk .menu-left li {
-    margin-right: 45px;
+    margin-right: 38px;
   }
   .menu-top.menu-desk .menu-right li {
-    margin-left: 45px;
+    margin-left: 38px;
   }
   /* Chuong Trinh */
   .item-trainee .content-right {
