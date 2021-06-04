@@ -156,7 +156,7 @@ h1,
 .header .header-contact {
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   padding: 15px;
 }
 .header .header-contact::before {
@@ -1727,6 +1727,47 @@ iframe {
 .wrapper-contact img {
   width: 70px;
 }
+.mincenter3 .nav-item {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.mincenter3 .nav-item button {
+  width: 100%;
+}
+.mincenter3 .tabs-child,
+.mincenter3 .tab-content {
+  width: 100%;
+}
+.mincenter3 .tabs-child .nav-pills {
+  width: 100%;
+  display: flex;
+  flex-direction: row !important;
+  align-items: center;
+  height: auto;
+  min-height: auto;
+  border-radius: 40px;
+  margin-bottom: 20px;
+}
+.mincenter3 .tabs-child {
+  flex-direction: column;
+}
+.mincenter3 .tabs-child .tab-content {
+  border-radius: 40px;
+  padding: 10px;
+}
+.mincenter3 .label-checkmark .checkmark {
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+}
+.mincenter3 .tabs-child .tab-content .tab-pane {
+  border-radius: 40px;
+  padding: 2rem;
+}
+.header-contact .phone-mobile {
+  margin-right: 15px;
+}
 /* Other */
 @media screen and (min-width: 768px) {
   .section-banner {
@@ -1882,6 +1923,49 @@ iframe {
     padding: 2rem 2rem 2rem 2rem !important;
   }
   /* Page News */
+  .mincenter3 .nav-item {
+    display: inline-block;
+    width: auto;
+    margin-bottom: 0;
+  }
+  .mincenter3 .nav-item button {
+    width: auto;
+  }
+  .mincenter3 .tabs-child,
+  .mincenter3 .tab-content {
+    width: auto;
+  }
+  .mincenter3 .tabs-child .nav-pills {
+    width: 20%;
+    display: flex;
+    flex-direction: column !important;
+    align-items: flex-start;
+    height: 270px;
+    min-height: auto;
+    border-radius: 40px;
+    margin-bottom: 20px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .mincenter3 .tabs-child {
+    flex-direction: row;
+  }
+  .mincenter3 .tabs-child .tab-content {
+    border-radius: 40px;
+    padding: 10px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    height: 270px;
+  }
+  .mincenter3 .label-checkmark .checkmark {
+    width: 120px;
+    height: 120px;
+    background-size: contain;
+  }
+  .mincenter3 .tabs-child .tab-content .tab-pane {
+    border-radius: 40px;
+    padding: 2rem;
+  }
 }
 @media screen and (min-width: 1024px) {
   /* Header */
