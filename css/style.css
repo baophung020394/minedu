@@ -190,6 +190,15 @@ h1,
   padding-top: 60px;
   padding-left: 30px;
   transition: 0.4s all ease-in-out;
+  overflow: auto;
+}
+.logo-mobile {
+  margin: 0;
+  width: 80px;
+  position: absolute !important;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .header .menu-top.menu-mobile.active {
   right: 0;
@@ -1232,6 +1241,21 @@ iframe {
     var(--color-text15);
   text-align-last: center;
 }
+.select-form {
+  background: url(../img/mincenter/images/muitenxuong.png) 96% / 22px no-repeat
+    #eeeeee;
+  font-family: var(--font-family-Myriad-Pro-Regular);
+  font-size: 20px;
+  color: var(--color-text17);
+  width: 100%;
+  border: none;
+  padding: 1rem 1rem 1rem 2rem;
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none;
+  border-radius: 40px;
+  min-height: 60px;
+}
 .schedule select:focus {
   outline: none;
   border: none;
@@ -1968,6 +1992,9 @@ iframe {
   }
 }
 @media screen and (min-width: 1024px) {
+  .select-form { 
+    min-height: 74px;
+  }
   /* Header */
   .header-form .form-group span.min-center {
     position: unset;
