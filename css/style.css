@@ -2122,7 +2122,7 @@ iframe {
   }
   /* header */
   .header .menu-top ul li a {
-    font-size: 18px;
+    font-size: 15px;
   }
   .submenu {
     opacity: 0;
@@ -2214,10 +2214,10 @@ iframe {
     align-items: center;
   }
   .menu-top.menu-desk .menu-left li {
-    margin-right: 30px;
+    margin-right: 19px;
   }
   .menu-top.menu-desk .menu-right li {
-    margin-left: 15px;
+    margin-left: 10px;
   }
   .menu-top.menu-desk .menu-right li:first-child {
     margin-left: 0;
@@ -2365,6 +2365,9 @@ iframe {
   .container {
     max-width: 1280px;
   }
+  .header .menu-top ul li a {
+    font-size: 18px;
+  }
   /* News */
   .section-news .item-trainee {
     width: 630px;
@@ -2400,10 +2403,10 @@ iframe {
     max-width: 1380px;
   }
   .menu-top.menu-desk .menu-left li {
-    margin-right: 38px;
+    margin-right: 20px;
   }
   .menu-top.menu-desk .menu-right li {
-    margin-left: 38px;
+    margin-left: 15px;
   }
   /* Chuong Trinh */
   .item-trainee .content-right {
