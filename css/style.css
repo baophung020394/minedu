@@ -1992,7 +1992,7 @@ iframe {
   }
 }
 @media screen and (min-width: 1024px) {
-  .select-form { 
+  .select-form {
     min-height: 74px;
   }
   /* Header */
@@ -2474,7 +2474,7 @@ iframe {
 @media screen and (min-width: 1920px) {
   /* header */
   .menu-top.menu-desk {
-    padding: 0 14%;
+    padding: 0 11%;
   }
   /* header */
   /* Premium */
