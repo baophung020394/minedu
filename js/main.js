@@ -34,19 +34,19 @@ $(document).ready(() => {
     // autoplayTimeout: 3000,
     // autoplayHoverPause: true,
     margin: 10,
-    dots:true,
+    dots: true,
     center: true,
     item: 4,
     dotEach: 1,
     responsive: {
       0: {
         items: 1,
-        nav:false,
-        dots:true,
+        nav: false,
+        dots: true,
       },
       768: {
         items: 3,
-        dots:true,
+        dots: true,
         nav: false,
         navText: [
           "<img src='../img/home/images/prev-btn.png'>",
@@ -55,11 +55,11 @@ $(document).ready(() => {
       },
       1200: {
         items: 3,
-        dots:true,
+        dots: true,
         nav: true,
         navText: [
           "<img src='../img/home/images/prev-btn.png'>",
-      "<img src='../img/home/images/next-btn.png'>",
+          "<img src='../img/home/images/next-btn.png'>",
         ],
       },
     },
@@ -121,15 +121,6 @@ $(document).ready(() => {
     },
   });
 
-  // $(".carousel-children").on("translate.owl.carousel", function (e) {
-  //   idx = e.item.index;
-  //   $(".owl-item")
-  //     .eq(idx - 1)
-  //     .addClass("left");
-  //   $(".owl-item")
-  //     .eq(idx + 1)
-  //     .addClass("right");
-  // });
   $(".open-menu").on("click", function () {
     $("body").find(".menu-mobile").addClass("active");
     $("body").find(".bg-overlay-black").css({ display: "block" });
@@ -179,7 +170,7 @@ $(document).ready(() => {
     $(this).find(".menu-mobile-sub").addClass("active");
     $("body").find(".bg-overlay").css({ display: "block" });
   });
-  if ($(window).width() >= 992) {
+  if ($(window).width() >= 1300) {
     $(".header").removeClass("header-mobile");
   } else {
     $(".header").addClass("header-mobile");
@@ -188,11 +179,16 @@ $(document).ready(() => {
     var width = $(window).width();
     // $('.header').addClass('header-mobile');
     console.log(width);
-    if (width >= 992) {
+    if (width >= 1300) {
       $(".header").removeClass("header-mobile");
     } else {
       $(".header").addClass("header-mobile");
     }
+  });
+
+  $(".menu-mobile ul li ul.submenu").slideUp();
+  $(".menu-mobile ul li a").on("click", function () {
+    $(this).find("~ul.submenu").slideToggle(250);
   });
 });
 function openday(evt, days) {
@@ -211,61 +207,3 @@ function openday(evt, days) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
-
-// function openmonhoc(evt, cap) {
-//   var i, tabcontent, tablinks;
-//   tabcontent = document.getElementsByClassName("tabcontent");
-//   for (i = 0; i < tabcontent.length; i++) {
-//     tabcontent[i].style.display = "none";
-//   }
-//   tablinks = document.getElementsByClassName("tablinks");
-//   for (i = 0; i < tablinks.length; i++) {
-//     tablinks[i].className = tablinks[i].className.replace(" active", "");
-//   }
-//   document.getElementById(cap).style.display = "block";
-//   evt.currentTarget.className += " active";
-// }
-
-
-// function openmonhocdoc(evt, lop) {
-//   var i, tabcontent, tablinks;
-//   tabcontent = document.getElementsByClassName("tabcontent2");
-//   for (i = 0; i < tabcontent.length; i++) {
-//     tabcontent[i].style.display = "none";
-//   }
-//   tablinks = document.getElementsByClassName("tablinks2");
-//   for (i = 0; i < tablinks.length; i++) {
-//     tablinks[i].className = tablinks[i].className.replace(" active", "");
-//   }
-//   document.getElementById(lop).style.display = "block";
-//   evt.currentTarget.className += " active";
-// }
-// document.getElementById("defaultOpen2").click();
-
-// function openmonhoc2(evt, cap) {
-//   var i, tabcontent, tablinks;
-//   tabcontent = document.getElementsByClassName("tabcontent3");
-//   for (i = 0; i < tabcontent.length; i++) {
-//     tabcontent[i].style.display = "none";
-//   }
-//   tablinks = document.getElementsByClassName("tablinks3");
-//   for (i = 0; i < tablinks.length; i++) {
-//     tablinks[i].className = tablinks[i].className.replace(" active", "");
-//   }
-//   document.getElementById(cap).style.display = "block";
-//   evt.currentTarget.className += " active";
-// }
-// function openmonhocdoc2(evt, lop) {
-//   var i, tabcontent, tablinks;
-//   tabcontent = document.getElementsByClassName("tabcontent4");
-//   for (i = 0; i < tabcontent.length; i++) {
-//     tabcontent[i].style.display = "none";
-//   }
-//   tablinks = document.getElementsByClassName("tablinks4");
-//   for (i = 0; i < tablinks.length; i++) {
-//     tablinks[i].className = tablinks[i].className.replace(" active", "");
-//   }
-//   document.getElementById(lop).style.display = "block";
-//   evt.currentTarget.className += " active";
-// }
-// document.getElementById("defaultOpen3").click();
