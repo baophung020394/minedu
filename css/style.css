@@ -233,6 +233,10 @@ h1,
 .header .menu-top.menu-mobile ul li {
   margin-bottom: 20px;
 }
+.header .menu-top.menu-mobile ul li a {
+  height: 30px;
+  line-height: 30px;
+}
 .section-banner {
   height: 20vh;
   background-size: cover !important;
