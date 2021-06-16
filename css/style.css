@@ -2325,6 +2325,7 @@ iframe {
   .menu-top.menu-desk ul li .submenu li {
     width: 100%;
     margin-right: 0;
+    margin-left: 0;
   }
   .menu-top.menu-desk ul li .submenu li a {
     color: #ffffff;
