@@ -491,6 +491,8 @@ h1,
   width: 289px;
   height: 295px;
   margin: auto;
+  transition: 0.4s ease-in-out all;
+
 }
 .owl-nav {
   text-align: center;
@@ -2144,7 +2146,7 @@ iframe {
   }
   /* Chuong Trinh */
   /* Uom mam */
-  .carousel-children-desk .owl-item .item .item-child:first-child img {
+  .carousel-children-desk .owl-item.active .item .item-child:first-child img {
     width: 385px;
     height: 405px;
   }
