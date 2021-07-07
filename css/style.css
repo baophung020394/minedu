@@ -485,14 +485,13 @@ h1,
 }
 .carousel-children-desk .owl-item .item {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  /* grid-template-columns: repeat(1, 1fr); */
 }
 .carousel-children-desk .owl-item .item .item-child img {
-  width: 289px;
-  height: 295px;
+  width: 385px;
+  height: 405px;
   margin: auto;
   transition: 0.4s ease-in-out all;
-
 }
 .owl-nav {
   text-align: center;
@@ -2035,7 +2034,7 @@ iframe {
   /* Uom mam */
   .carousel-children-desk .owl-item .item {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(3, 1fr); */
   }
   /* Uom mam */
   /* Form register */
@@ -2146,21 +2145,21 @@ iframe {
   }
   /* Chuong Trinh */
   /* Uom mam */
-  .carousel-children-desk .owl-item.active .item .item-child:first-child img {
-    width: 385px;
-    height: 405px;
+  .carousel-children-desk .owl-item.active ~ .owl-item .item .item-child img {
+    width: 289px;
+    height: 295px;
   }
   .owl-nav .owl-prev {
     position: absolute;
-    bottom: 0;
-    left: 43%;
+    bottom: -100px;
+    left: 47%;
     z-index: 1;
     transform: translateX(-50%);
   }
   .owl-nav .owl-next {
     position: absolute;
-    bottom: 0;
-    left: 50%;
+    bottom: -100px;
+    right: 39%;
     z-index: 1;
     transform: translateX(-50%);
   }

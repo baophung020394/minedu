@@ -98,7 +98,7 @@ $(document).ready(() => {
     // autoplay: true,
     // autoplayTimeout: 3000,
     // autoplayHoverPause: true,
-    margin: 15,
+    margin: 20,
     nav: true,
     center: true,
     navText: [
@@ -115,11 +115,17 @@ $(document).ready(() => {
         dots: false,
       },
       1024: {
-        items: 1,
+        items: 3,
         dots: false,
       },
     },
   });
+
+  // $(".owl-item.active.center").prev().addClass("big");
+  
+  // $(".carousel-children-desk").on("translate.owl.carousel", function (e) {
+  //   $(".owl-item.active.center").prev().addClass("big");
+  // });
 
   $(".open-menu").on("click", function () {
     $("body").find(".menu-mobile").addClass("active");
